@@ -1,27 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href='public/css/bootstrap.min.css'>
     <script type="text/javascript" src='public/js/jquery-3.5.1.min.js'></script>
     <script type="text/javascript" src='public/js/bootstrap.min.js'></script>
+    <title>Mutiron - Home Page</title>
 </head>
 <body>
-    <h2>Login</h2>
-<div class="card">
-<div class="card-body">
-<form action="" method='POST'>
-    <label for="nome">Nome de usuário: </label>
-    <input type="text" id="nome" name="nome" placeholder="Digite o username" class="form-control">
-    <label for="slug">Senha: </label>
-    <input type="text" id="slug" name="slug" placeholder="Digite a senha" class="form-control">
 
-    <button type="submit" class="btn btn-success mt-4">Cadastrar usuário</button>
-</div>
-</form>
-</div>
+    <!-- NAV BAR --> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">MutirON</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Perfil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Settings
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Privacidade</a>
+                <a class="dropdown-item" href="#">Conteúdo</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Sair</a>
+              </div>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <!--FIM DA NAVBAR-->
+
+      <ul class="list-group">
+        <a href="#"><li class="list-group-item">
+            <div class="media">
+                <img class="mr-4" src="public/img/tree.png">
+                <div class="media-body">
+                  <h5 class="mt-0">Coleta de cobertores</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+              <button type="button" class="btn btn-danger mt-4">Like</button>
+        </li></a>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
 </body>
 </html>
